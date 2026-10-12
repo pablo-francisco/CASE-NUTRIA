@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testes e ferramentas
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Saídas regeneráveis (python -m nutria exportar)
+reports/tabelas/
+
+# SQLite: só os arquivos temporários. O banco data/nutria.db é versionado de propósito,
+# para que os números dos notebooks sejam reproduzíveis sem rodar a simulação.
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env

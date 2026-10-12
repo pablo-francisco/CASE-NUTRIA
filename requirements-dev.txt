@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Testes e reexecução dos notebooks pela linha de comando
+pytest>=7.4
+nbconvert>=7.0

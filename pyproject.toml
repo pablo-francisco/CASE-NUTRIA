@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nutria"
+version = "1.0.0"
+description = "Análise investigativa de uma operadora (fictícia) de refeições coletivas: dois cases com SQL e Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "numpy>=1.24", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "nbconvert>=7.0", "jupyterlab>=4.0", "ipykernel>=6.0"]
+
+[project.scripts]
+nutria = "nutria.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

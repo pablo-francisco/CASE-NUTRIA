@@ -1,0 +1,9 @@
+# Dependências para rodar a análise e os notebooks
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+jupyterlab>=4.0
+ipykernel>=6.0
+exceptiongroup
+# Instala o pacote do projeto (src/nutria) em modo editável
+-e .
